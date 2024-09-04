@@ -1,0 +1,505 @@
+@font-face {
+    font-family: 'din light';
+    src: url('../fonts/dinlight-webfont.woff2') format('woff2'),
+        url('../fonts/dinlight-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'din medium';
+    src: url('../fonts/dinmedium-webfont.woff2') format('woff2'),
+        url('../fonts/dinmedium-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'din bold';
+    src: url('../fonts/DINBold.woff2') format('woff2'),
+        url('../fonts/DINBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'azur light';
+    src: url('../fonts/Wiescher\ Design\ -\ Azur\ Light.woff2') format('woff2'),
+        url('../fonts/Wiescher\ Design\ -\ Azur\ Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'azur normal';
+    src: url('../fonts/Wiescher\ Design\ -\ Azur\ Normal.woff2') format('woff2'),
+        url('../fonts/Wiescher\ Design\ -\ Azur\ Normal.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'azur bold';
+    src: url('../fonts/Wiescher\ Design\ -\ Azur\ XBold.woff2') format('woff2'),
+        url('../fonts/Wiescher\ Design\ -\ Azur\ XBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'dinPro normal';
+    src: url('../fonts/DINPro.woff2') format('woff2'),
+        url('../fonts/DINPro.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'dinPro bold';
+    src: url('../fonts/DINPro-Bold.woff2') format('woff2'),
+        url('../fonts/DINPro-Bold.woff') format('woff');
+}
+
+
+:root {
+    --din-light: 'din light';
+    --din-medium: 'din medium';
+    --din-bold: 'din bold';
+    --azur-light: 'azur light';
+    --azur-normal: 'azur normal';
+    --azur-bold: 'azur bold';
+    --dinPro-normal: 'dinPro normal';
+    --dinPro-bold: 'dinPro bold';
+    --white: #fff;
+    --blue: #28b8ce;
+    --dark-blue: #4690a1;
+    --gray: #e5e5e5;
+    --black-black: #000;
+    --black: #1a1a1a;
+    --black2: #201313;
+    --black-green: #2c3133;
+    --orange: #ffa300;
+    --purple: #6f32ed;
+    --distance1: 0;
+    scroll-behavior: smooth;
+}
+
+.bg-primary {
+    background-color: var(--orange) !important;
+}
+
+.hamburger-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bar {
+    width: 33px;
+    border: 1.2px solid black;
+    margin-bottom: 6px;
+}
+
+.bar:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent; 
+  }
+#sidebar{
+    background-color: #201313;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    max-width: 400px;
+    width: 97%;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 1000;
+    transition: all linear 0.3s;
+    font-family: var(--din-light);
+}
+#sidebar.show {
+    right: 0;
+}
+
+
+
+
+.main_heading {
+    font-size: 9.6vw;
+    color: #e6eaed;
+    /* z-index: -100; */
+}
+
+.text-md {
+    font-size: 1.2rem !important;
+}
+
+.heading-normal {
+    font-size: 1.8rem;
+}
+
+
+.collections>div>div {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.571) !important;
+}
+
+.video_panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.747);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0);
+    /* Start scale at 0 */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Transition both scale and opacity */
+    pointer-events: none;
+    /* Prevent clicking when hidden */
+}
+
+#video_panel.show {
+    opacity: 1;
+    transform: scale(1);
+    /* Animate to full size */
+    pointer-events: all;
+    /* Allow interaction when visible */
+}
+
+
+
+.btn-video {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 100%;
+    background: var(--orange);
+    color: #fff;
+    transition: all 0.1s !important;
+    box-shadow: 0 0 0 0 #f8942257;
+    transform: translate(-50%, -50%) !important;
+    animation: pulse 1.2s infinite !important;
+    top: 50%;
+    left: 50%;
+}
+
+.btn-video svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+
+
+
+footer {
+    padding: 120px 0 90px;
+    color: var(--white);
+    overflow: hidden;
+    background: var(--black);
+}
+
+footer .shapes {
+    top: 0;
+}
+
+footer .furthrer-information {
+    font-size: 52px;
+    margin-top: 15px;
+}
+
+footer form {
+    margin-top: 50px;
+}
+
+footer input {
+    font-family: var(--dinPro-normal);
+    font-size: 16px;
+    border-radius: 2px;
+    border: 0;
+    outline: 0;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #dddddd;
+}
+
+footer input[type="checkbox"] {
+    height: 25px;
+    border: none;
+    box-shadow: none;
+}
+
+footer .input-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .input-block input,
+footer .input-block button {
+    width: 48.75%;
+    margin-bottom: 22px;
+}
+
+.form-control {
+    border-width: 2px;
+}
+
+footer .footer-logo {
+    width: 100px;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+}
+
+footer .link {
+    font-family: var(--azur-light);
+    letter-spacing: 8px;
+    font-size: 54px;
+    display: block;
+    text-align: center;
+}
+
+footer .link:first-of-type {
+    margin-top: 45px;
+}
+
+footer .link:last-of-type {
+    margin-top: 7px;
+}
+
+footer .rights {
+    font-family: var(--dinPro-normal);
+    font-size: 12px !important;
+    margin-top: 55px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+footer .cell-footer-top {
+    top: -1250px;
+    right: 200px;
+    opacity: 0.2;
+}
+
+footer .cell-footer-left {
+    bottom: 350px;
+    left: 150px;
+    opacity: 0.2;
+}
+
+footer .cell-footer-right {
+    bottom: 250px;
+    right: 120px;
+    opacity: 0.2;
+}
+
+input:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+@media screen and (min-width: 576px) {
+    .text-sm-lg {
+        font-size: 1.35rem !important;
+    }
+
+    .heading-sm-base {
+        font-size: 2.7rem;
+    }
+
+    .heading-sm-small {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+
+    }
+
+    .collections>div>div {
+        border-right: 1px solid rgba(128, 128, 128, 0.571) !important;
+        border-bottom: none !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .text-md-xl {
+        font-size: 1.62rem !important;
+    }
+
+    .heading-md-xl {
+        font-size: 3.5rem !important;
+    }
+
+    .heading-md-lg {
+        font-size: 2rem !important;
+        line-height: 3rem;
+    }
+
+
+    .border_big_hexagon {
+        background-color: #30313314;
+        box-shadow: 10px 10px 1px red;
+        height: 150px;
+        width: 170px;
+
+        transform: rotateZ(-29deg) translateY(90%);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+
+    .hexagon {
+        position: absolute;
+        top: 0;
+        left: 8vw;
+        height: 150px;
+        width: 150px;
+        background: rgb(224, 224, 224);
+    }
+
+    .hexagon_normal {
+        position: absolute;
+        bottom: -30px;
+        right: 14vw;
+        height: 70px;
+        width: 70px;
+        background: rgb(224, 224, 224);
+    }
+
+
+    .hexagon:before, .hexagon_normal:before {
+        position: absolute;
+        content: '';
+    }
+
+    .hexagon:before , .hexagon_normal:before {
+        top: 2px;
+        /* border width */
+        left: 2px;
+        /* border width */
+        height: calc(100% - 4px);
+        /* 100% - (2 * border width) */
+        width: calc(100% - 4px);
+        /* 100% - (2 * border width) */
+        background: white;
+    }
+
+    .hexagon,
+    .hexagon:before , .hexagon_normal , .hexagon_normal:before {
+        -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+
+
+    /* Just for demo */
+
+    .hexagon , .hexagon_normal {
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .fill_small_hexagon {
+        background-color: #30313314;
+        box-shadow: 10px 10px 1px red;
+        height: 50px;
+        width: 57px;
+        transform: rotateZ(-29deg) translateY(90%);
+        position: absolute;
+        bottom: 200px;
+        right: 14vw;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+
+    .footer_big_hexagon {
+        background: #303133;
+        height: 150px;
+        width: 170px;
+        transform: rotateZ(-29deg) translateY(90%);
+        position: absolute;
+        bottom: 0;
+        right: -120px;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+
+    .footer_small_hexagon {
+        background: #303133;
+        height: 70px;
+        width: 90px;
+        transform: rotateZ(-34deg) translateY(100%);
+        position: absolute;
+        top: -150px;
+        left: -120px;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer_big_hexagon {
+        background: #303133;
+        height: 150px;
+        width: 170px;
+        transform: rotateZ(-29deg) translateY(120%);
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+
+    .footer_small_hexagon {
+        background: #303133;
+        height: 60px;
+        width: 80px;
+        transform: rotateZ(-34deg) translateY(100%);
+        position: absolute;
+        top: -120px;
+        left: 0px;
+        z-index: 10;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .text-md-xl {
+        font-size: 1.9rem !important;
+    }
+
+    .heading-lg-3xl {
+        font-size: 5rem !important;
+    }
+
+    .heading-lg-xl {
+        font-size: 3.3rem !important;
+        line-height: 3.8rem;
+
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .heading-xl-4xl {
+        font-size: 7rem !important;
+    }
+
+    .heading-xl-2xl {
+        font-size: 4rem !important;
+        line-height: 4.8rem;
+    }
+}

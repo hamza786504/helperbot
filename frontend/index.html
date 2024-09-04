@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Helper Bot - Home</title>
+
+<body>
+
+    <aside class="sidebar" id="sidebar">
+        <button type="button" id="closeSidebar" class="bg-transparent outline-none border-0 text-white"
+            style="font-size: 30px; position: absolute; right: 20px; top: 10px; z-index: 100;">
+            &#8594;
+        </button>
+        <div class="text-center py-3">
+            <a href="/index.html">
+                <svg width="40" height="40" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M64.0402 44.1987H63.1269C56.9215 57.832 46.6135 65.1734 31.5349 64.872C20.2335 64.6467 8.22152 57.7187 2.91485 44.1414H1.55885C1.73752 43.5854 2.28952 43.58 2.60819 43.2334C0.209518 35.9027 0.297519 28.568 3.08019 21.3387C5.46952 15.1347 9.44685 10.128 14.9669 6.38674C26.0122 -1.10259 40.7242 -0.91193 51.4962 6.7254C61.8548 14.0694 68.2655 28.28 63.2949 43.3934C63.4335 43.752 64.0202 43.688 64.0402 44.1987ZM62.5909 43.1534C66.5655 32.504 64.2095 17.7587 52.7415 8.49207C41.4175 -0.658596 25.2695 -0.830594 13.8949 7.92407C1.98819 17.088 -0.711815 32.0947 3.26552 42.928C4.09619 42.728 4.92552 42.3854 5.76685 42.3534C8.37485 42.2547 10.1962 40.956 11.5575 38.8494C11.6522 38.704 11.7642 38.5694 11.8762 38.436C13.4629 36.5427 14.6749 34.3334 16.5549 32.696C17.8629 31.556 18.8695 30.208 19.7655 28.7534C20.5882 27.4174 21.4669 26.1214 22.5229 24.9547C22.7629 24.6894 22.8735 24.3894 22.9509 24.032C23.4575 21.6867 24.7575 20.496 27.1309 20.168C27.9242 20.0587 28.7255 20.004 29.5189 19.9C30.0802 19.8267 30.5202 19.548 30.6389 18.964C30.7375 18.4694 30.6775 17.744 30.6775 17.744C30.5815 17.7267 29.8962 17.668 29.8895 17.5547C29.7709 15.512 29.3642 13.332 30.0455 11.3307C30.5335 9.89741 31.7749 9.85874 33.0615 9.89607C34.6242 9.94541 35.4215 10.5747 35.7069 12.1107C36.0309 13.8507 35.7882 15.7387 35.6589 17.4734C35.6469 17.6294 34.9775 17.708 34.8829 17.7267C34.8829 17.7267 34.7629 18.5027 34.9162 19.036C35.0895 19.6414 35.5655 19.8867 36.1855 19.9374C37.0189 20.0067 37.8469 20.124 38.6775 20.224C40.8815 20.492 42.0202 21.9174 42.5549 23.9107C42.6882 24.408 42.8962 24.7907 43.1989 25.18C43.9242 26.1134 44.6735 27.036 45.3042 28.0347C46.4589 29.864 47.6508 31.6387 49.3295 33.056C50.1522 33.7507 50.7975 34.632 51.4308 35.512C52.7108 37.2947 54.0602 39.0254 55.5135 40.6734C56.1268 41.3694 56.7935 41.8694 57.7855 41.9934C59.4002 42.1947 61.0122 42.4787 62.5909 43.1534ZM35.5002 64.1907C49.5682 63.1534 59.5068 52.764 62.1802 44.084C61.3895 43.9907 60.5815 43.9614 59.8082 43.788C58.4989 43.4947 56.9655 43.6494 55.9388 42.7454C51.6349 38.952 47.2189 35.272 43.6882 30.676C42.4869 29.1134 41.3255 27.5227 40.1668 25.8534C39.5575 26.3507 39.1282 26.8787 38.7682 27.48C37.3202 29.9027 37.0055 32.572 37.4802 35.2494C38.1082 38.7854 37.8562 42.2 37.0629 45.6774C35.6802 51.7454 35.3455 57.9254 35.5002 64.1907ZM25.5389 25.9374C25.4375 25.952 25.3442 25.936 25.3109 25.9734C25.1522 26.1547 24.9975 26.344 24.8602 26.544C22.0762 30.5987 19.0002 34.4 15.2935 37.6614C14.1162 38.6974 12.8802 39.6814 11.8149 40.8227C10.2269 42.524 8.36685 43.552 6.04285 43.7534C5.25219 43.8214 4.46952 43.9627 3.68152 44.0694C7.32419 54.7267 18.2935 63.3747 30.0282 64.0974C30.1909 57.5 29.7375 50.9654 28.2602 44.5174C27.6749 41.964 27.2949 39.4027 27.8909 36.7734C28.2309 35.2787 28.2869 33.732 28.1802 32.196C28.0135 29.8054 27.3015 27.64 25.5389 25.9374Z"
+                        fill="white" />
+                </svg>
+            </a>
+            <p style="font-size: 14px; letter-spacing: 2px;" class="my-3 text-white">We are the Academy of Robotics</p>
+            <p style="font-size: 14px; letter-spacing: 2px;" class="my-3 text-white">Our work is our future, our people
+                are our inspiration</p>
+            <ul class="text-start px-4">
+                <li class="text-uppercase py-2" style="border-bottom: 1px solid rgb(78, 78, 78);"><a href="/"
+                        class="text-white" style="text-decoration:none;">Home</a></li>
+                <li class="text-uppercase py-2" style="border-bottom: 1px solid rgb(78, 78, 78);"><a href="/"
+                        class="text-white" style="text-decoration:none;">About us</a></li>
+                <li class="text-uppercase py-2" style="border-bottom: 1px solid rgb(78, 78, 78);"><a href="/"
+                        class="text-white" style="text-decoration:none;">what we do</a></li>
+                <li class="text-uppercase py-2" style="border-bottom: 1px solid rgb(78, 78, 78);"><a href="/"
+                        class="text-white" style="text-decoration:none;">discover kar-go</a></li>
+                <li class="text-uppercase py-2" style="border-bottom: 1px solid rgb(78, 78, 78);"><a href="/"
+                        class="text-white" style="text-decoration:none;">our timeline</a></li>
+                <li class="text-uppercase py-2" style="border-bottom: 1px solid rgb(78, 78, 78);"><a href="/"
+                        class="text-white" style="text-decoration:none;">work with us</a></li>
+                <li class="text-uppercase py-2" style="border-bottom: 1px solid rgb(78, 78, 78);"><a href="/"
+                        class="text-white" style="text-decoration:none;">investors</a></li>
+                <li class="text-uppercase py-2" style="border-bottom: 1px solid rgb(78, 78, 78);"><a href="/"
+                        class="text-white" style="text-decoration:none;">our team</a></li>
+                <li class="text-uppercase py-2"><a href="/" class="text-white" style="text-decoration:none;">contact
+                        us</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center justify-content-end">
+                <a href="www.facebook.com" class="d-flex align-items-center justify-content-center me-2"
+                    style="background: rgb(40, 40, 40); width: 40px; height: 40px; text-decoration: none; border-radius: 50%;">
+                    <i class="text-white fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="www.twitter.com" class="d-flex align-items-center justify-content-center me-2"
+                    style="background: rgb(40, 40, 40); width: 40px; height: 40px; text-decoration: none; border-radius: 50%;">
+                    <i class="text-white fa-brands fa-twitter"></i>
+                </a>
+                <a href="www.instagram.com" class="d-flex align-items-center justify-content-center me-2"
+                    style="background: rgb(40, 40, 40); width: 40px; height: 40px; text-decoration: none; border-radius: 50%;">
+                    <i class="text-white fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+    </aside>
+    <div class="container py-4">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-6 d-flex align-items-center justify-content-start">
+                <a href="/index.html">
+                    <svg width="40" height="40" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M64.0402 44.1987H63.1269C56.9215 57.832 46.6135 65.1734 31.5349 64.872C20.2335 64.6467 8.22152 57.7187 2.91485 44.1414H1.55885C1.73752 43.5854 2.28952 43.58 2.60819 43.2334C0.209518 35.9027 0.297519 28.568 3.08019 21.3387C5.46952 15.1347 9.44685 10.128 14.9669 6.38674C26.0122 -1.10259 40.7242 -0.91193 51.4962 6.7254C61.8548 14.0694 68.2655 28.28 63.2949 43.3934C63.4335 43.752 64.0202 43.688 64.0402 44.1987ZM62.5909 43.1534C66.5655 32.504 64.2095 17.7587 52.7415 8.49207C41.4175 -0.658596 25.2695 -0.830594 13.8949 7.92407C1.98819 17.088 -0.711815 32.0947 3.26552 42.928C4.09619 42.728 4.92552 42.3854 5.76685 42.3534C8.37485 42.2547 10.1962 40.956 11.5575 38.8494C11.6522 38.704 11.7642 38.5694 11.8762 38.436C13.4629 36.5427 14.6749 34.3334 16.5549 32.696C17.8629 31.556 18.8695 30.208 19.7655 28.7534C20.5882 27.4174 21.4669 26.1214 22.5229 24.9547C22.7629 24.6894 22.8735 24.3894 22.9509 24.032C23.4575 21.6867 24.7575 20.496 27.1309 20.168C27.9242 20.0587 28.7255 20.004 29.5189 19.9C30.0802 19.8267 30.5202 19.548 30.6389 18.964C30.7375 18.4694 30.6775 17.744 30.6775 17.744C30.5815 17.7267 29.8962 17.668 29.8895 17.5547C29.7709 15.512 29.3642 13.332 30.0455 11.3307C30.5335 9.89741 31.7749 9.85874 33.0615 9.89607C34.6242 9.94541 35.4215 10.5747 35.7069 12.1107C36.0309 13.8507 35.7882 15.7387 35.6589 17.4734C35.6469 17.6294 34.9775 17.708 34.8829 17.7267C34.8829 17.7267 34.7629 18.5027 34.9162 19.036C35.0895 19.6414 35.5655 19.8867 36.1855 19.9374C37.0189 20.0067 37.8469 20.124 38.6775 20.224C40.8815 20.492 42.0202 21.9174 42.5549 23.9107C42.6882 24.408 42.8962 24.7907 43.1989 25.18C43.9242 26.1134 44.6735 27.036 45.3042 28.0347C46.4589 29.864 47.6508 31.6387 49.3295 33.056C50.1522 33.7507 50.7975 34.632 51.4308 35.512C52.7108 37.2947 54.0602 39.0254 55.5135 40.6734C56.1268 41.3694 56.7935 41.8694 57.7855 41.9934C59.4002 42.1947 61.0122 42.4787 62.5909 43.1534ZM35.5002 64.1907C49.5682 63.1534 59.5068 52.764 62.1802 44.084C61.3895 43.9907 60.5815 43.9614 59.8082 43.788C58.4989 43.4947 56.9655 43.6494 55.9388 42.7454C51.6349 38.952 47.2189 35.272 43.6882 30.676C42.4869 29.1134 41.3255 27.5227 40.1668 25.8534C39.5575 26.3507 39.1282 26.8787 38.7682 27.48C37.3202 29.9027 37.0055 32.572 37.4802 35.2494C38.1082 38.7854 37.8562 42.2 37.0629 45.6774C35.6802 51.7454 35.3455 57.9254 35.5002 64.1907ZM25.5389 25.9374C25.4375 25.952 25.3442 25.936 25.3109 25.9734C25.1522 26.1547 24.9975 26.344 24.8602 26.544C22.0762 30.5987 19.0002 34.4 15.2935 37.6614C14.1162 38.6974 12.8802 39.6814 11.8149 40.8227C10.2269 42.524 8.36685 43.552 6.04285 43.7534C5.25219 43.8214 4.46952 43.9627 3.68152 44.0694C7.32419 54.7267 18.2935 63.3747 30.0282 64.0974C30.1909 57.5 29.7375 50.9654 28.2602 44.5174C27.6749 41.964 27.2949 39.4027 27.8909 36.7734C28.2309 35.2787 28.2869 33.732 28.1802 32.196C28.0135 29.8054 27.3015 27.64 25.5389 25.9374Z"
+                            fill="black" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-end">
+                <button class="hamburger-btn" id="openSidebar">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-0 mx-sm-auto px-md-5 py-4">
+        <div class="row position-relative align-items-center justify-content-between">
+            <h2 class="text-center position-absolute top-0 fw-bold main_heading" style="z-index: -10;">PRE-ORDER</h2>
+            <div class="col-12">
+                <img src="images/0.1.png" class="mx-auto" style="z-index:50000; width: 100%;" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="animate__animated animate__fadeInUp col-lg-8 col-12">
+                <p class="text-center text-md-xl text-sm-lg text-md mb-0">
+                    Increased demand on logistical activities such as
+                    the movement of medicines, specimens, and
+                    clinical supplies around a hospital is leading to
+                    delays to care in hospitals across the UK. By
+                    automating certain tasks, we can free up time for
+                    hospital staff to do the jobs that people do best.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="animate__animated animate__fadeInUp col-xl-8 col-lg-8 col-12">
+                <h1 class="text-center heading-xl-4xl heading-lg-3xl heading-md-xl heading-sm-base heading-normal"
+                    style="font-weight: 800;">
+                    THIS IS WHY
+                    WE INVENTED
+                    HELPER BOTS
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-4" style="background-color: #edf1f2;">
+        <div class="container my-5">
+            <div class="row flex-column align-items-center justify-content-center">
+                <div class="col-lg-5 col-md-6 col-12 text-center">
+                    <h2 class="text-center fw-normal text-uppercase mx-auto text-lg-xl"
+                        style="letter-spacing: 2px; font-family: var(--dinPro-normal); max-width: 300px;">
+                        INTELLIGENT
+                        HELPER SOLUTIONS
+                    </h2>
+                    <p class="my-4" style="font-size: 15px; font-family: var(--din-light);">Drawing on our work in
+                        developing self-driving cars for the
+                        road, our
+                        Helper Bots use advanced vision technology originally developed for
+                        self-driving cars to navigate in complex environments.</p>
+                    <p style="font-size: 15px;  font-family: var(--din-light);">Originally developed for use in
+                        hospitals, these Helper Bots can also be
+                        used in restaurants, cafes, offices or other busy indoor environments
+                        where you need to move things from A-B.</p>
+
+
+                </div>
+                <div class="col-md-6 mt-4">
+                    <div class="row align-items-start collections">
+                        <div class="col-sm-4 col-12 px-0">
+                            <div class="my-2 px-2 text-center">
+                                <img src="./images/distance.png" width="80px" alt="" />
+                                <p class="fw-bold mt-3" style="font-size: 12px; font-family: var(--dinPro-bold);">Carry
+                                    items autonomously
+                                    from A-B securely</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12 px-0">
+                            <div class="my-2 px-2 text-center">
+                                <img src="./images/box.png" width="80px" alt="" />
+                                <p class="fw-bold mt-3" style="font-size: 12px;  font-family: var(--dinPro-bold);">Can
+                                    be customised for
+                                    different logistics needs</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12 px-0">
+                            <div class="my-2 px-2 text-center" style="border: 0px solid transparent !important;">
+                                <img src="./images/chat.png" width="80px" alt="" />
+                                <p class="fw-bold mt-3" style="font-size: 12px;  font-family: var(--dinPro-bold);">Can
+                                    speak multiple
+                                    languages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 text-center position-relative col-12 mt-5">
+                    <img src="./images/1.jpg"
+                        style="max-width: 650px; width: 100%; border-radius: 10px; overflow: hidden;" alt="">
+                    <button type="button" id="openVideoPanel" class="border-0 btn-video">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-10">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-4">
+        <div class="container my-5">
+            <div class="position-relative row flex-column align-items-center justify-content-center">
+                <div class="col-md-6 col-12 text-center">
+                    <h2 class="text-center fw-normal text-uppercase mx-auto text-lg-xl"
+                        style="font-family: var(--dinPro-normal); max-width: 300px;">
+                        HOW WE CAN
+                        WORK WITH YOU
+                    </h2>
+                    <div class="mt-5" style="background-color: #edf1f2; border-radius: 5px; position: relative">
+                        <span class="p-1 px-3"
+                            style="font-family: var(--din-light); font-weight: bold; position: absolute; top: 0; left: 50%; background-color: var(--orange); transform: translate(-50%, -50%); border-radius: 10px; font-size: 11px;">Conduct
+                            a Pre-Trial Assessment</span>
+                        <p class="pt-4 p-4 mb-0" style="font-family: var(--din-light); font-size: 15px;">In order to
+                            supply the right solution for your
+                            organisation, we
+                            conduct a thorough pre-trial assessment to understand your
+                            needs and the specific challenges your environment
+                            presents for introducing this technology.</p>
+                        <p class="pt-0 p-4 mb-0" style="font-family: var(--din-light); font-size: 15px;">This is a
+                            one-off cost, which is discounted
+                            from
+                            any future
+                            purchase of our Helper Bots or from a paid trial.</p>
+                    </div>
+                    <div class="mt-5" style="background-color: #edf1f2; border-radius: 5px; position: relative">
+                        <span class="p-1 px-3"
+                            style="font-family: var(--din-light); font-weight: bold; position: absolute; top: 0; left: 50%; background-color: var(--orange); transform: translate(-50%, -50%); border-radius: 10px; font-size: 11px;">Supply
+                            a single Helper Bot for a limited trial
+                        </span>
+                        <p class="pt-4 p-4 mb-0" style="font-size: 15px;font-family: var(--din-light);">Lorem ipsum
+                            dolor sit amet, consectetuer
+                            adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                            magna aliquam aliquip.</p>
+                    </div>
+                    <div class="mt-5" style="background-color: #edf1f2; border-radius: 5px; position: relative">
+                        <span class="p-1 px-3"
+                            style="font-family: var(--din-light); font-weight: bold; position: absolute; top: 0; left: 50%; background-color: var(--orange); transform: translate(-50%, -50%); border-radius: 10px; font-size: 11px;">Supply
+                            a group of Helper Bots
+                        </span>
+                        <p class="pt-4 p-4 mb-0" style="font-size: 15px; font-family: var(--din-light);">Once you're set
+                            up with your Helper Bots, we
+                            can provide a
+                            dedicated server and ongoing software upgrades and
+                            support for your Helper Bots.</p>
+                    </div>
+
+                    <div class="hexagon"></div>
+                    <div class="hexagon_normal"></div>
+                    <div class="fill_small_hexagon"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="video_panel" class="video_panel align-items-center justify-content-center">
+        <button type="button" id="closeVideoPanel" class="bg-transparent outline-none border-0 text-white"
+            style="font-size: 40px; position: absolute; right: 20px; top: 0px;">
+            &times;
+        </button>
+        <iframe style="max-width: 595px; width: 90%; margin: 0 auto; aspect-ratio: 16/9;"
+            src="https://www.youtube.com/embed/YRC5G8w0uV0?si=uzZjOw_ycJV0NDui" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+    <footer>
+        <div class="container-md">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center px-md-5">
+                    <p class="fw-light heading-xl-2xl heading-lg-xl heading-md-lg heading-sm-small px-md-5"
+                        style="z-index: 1000 !important; font-family: var(--din-light);">
+                        For further information about our Helper
+                        Bots and how we can work with you, please
+                        complete the form below.
+                    </p>
+                    <form id="myForm" class="position-relative mb-5"
+                        style="max-width: 768px; margin-left: auto; margin-right: auto;">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 mb-3">
+                                <input type="text" placeholder="FIRST NAME" class="form-control" id="f_name" />
+                            </div>
+                            <div class="col-12 col-sm-6 mb-3">
+                                <input type="text" placeholder="LAST NAME" class="form-control" id="l_name" />
+                            </div>
+                            <div class="col-12 col-sm-6 mb-3">
+                                <input type="email" placeholder="EMAIL" class="form-control" id="email" />
+                            </div>
+                            <div class="col-12 col-sm-6 mb-3">
+                                <input type="text" placeholder="COMPANY / ORGANIZATION" class="form-control"
+                                    id="company" />
+                            </div>
+                            <div class="col-12 col-sm-6 mb-3">
+                                <input type="text" placeholder="ROLE" class="form-control" id="role" />
+                            </div>
+                            <div class="col-12 col-sm-6 mb-3">
+                                <input type="text" placeholder="PHONE NUMBER" class="form-control" id="tel" />
+                            </div>
+                            <label class="text-start fw-semibold mb-2">I AM INTERESTED IN</label>
+                            <div class="col-12 col-sm-6 text-start mb-sm-3">
+                                <div class="d-flex align-items-center mb-0">
+                                    <input class="me-2" type="checkbox" id="opportunities">
+                                    <label class="form-check-label mb-1" for="opportunities" style="font-size: 0.7rem">
+                                        Exploring opportunities to use Helper Bots for my business
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center mb-0">
+                                    <input class="me-2" type="checkbox" value="" id="other">
+                                    <label class="form-check-label mb-1" for="other" style="font-size: 0.7rem">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 mb-3">
+                                <div class="d-flex align-items-center mb-0">
+                                    <input class="me-2" type="checkbox" id="about_helper_bot">
+                                    <label class="form-check-label mb-1" for="about_helper_bot"
+                                        style="font-size: 0.7rem">
+                                        Finding out more about Helper Bots
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center mb-0">
+                                    <input class="me-2" type="checkbox" value="" id="investment">
+                                    <label class="form-check-label mb-1" for="investment" style="font-size: 0.7rem">
+                                        Investment opportunities
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 mb-3">
+                                <input type="text" placeholder="PLEASE EXPLAIN YOUR INTEREST IN OUR HELPER BOTS"
+                                    class="form-control" id="interest" />
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <button type="submit" class="btn w-100 bg-primary text-white border-0"
+                                    style="height: 60px; border-radius: 2px;">
+                                    SUBMIT
+                                </button>
+                            </div>
+                        </div>
+                        <span style="z-index: 1;" class="footer_big_hexagon"></span>
+                        <span style="z-index: 1;" class="footer_small_hexagon"></span>
+                    </form>
+
+
+                    <img class="logo" src="images/logo.svg" width="60px" />
+                    <p class="heading-lg-xl heading-md-lg heading-sm-base heading-normal mt-5 fw-light">TOMORROW'S
+                        TRANSPORT <br /> TECHNOLOGY TODAY</p>
+                    <p style="font-size: 12px; margin: 30px auto;">ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+        integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
